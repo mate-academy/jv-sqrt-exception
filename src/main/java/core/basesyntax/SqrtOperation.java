@@ -12,8 +12,7 @@ public class SqrtOperation {
     public double sqrt(double number) throws IllegalArgumentException {
         if (number < 0) {
             throw new IllegalArgumentException("Expected non-negative number, got " + number);
-        } else {
-            return Math.sqrt(number);
         }
+        return Math.sqrt(number);
     }
 }
