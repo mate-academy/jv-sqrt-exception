@@ -1,5 +1,7 @@
 package core.basesyntax;
 
+import java.io.IOException;
+
 /**
  * <p>Реализуйте метод sqrt(), вычисляющий квадратный корень числа. В отличие от Math.sqrt(),
  * это метод при передаче отрицательного параметра должен бросать исключение
@@ -7,7 +9,11 @@ package core.basesyntax;
  * где вместо вопросика будет подставлено фактически переданное в метод число.</p>
  */
 public class SqrtOperation {
-    public double sqrt(double number) {
-        return 0.0;
+    public double sqrt(double number) throws IllegalArgumentException {
+        if (number < 0) {
+            throw new IllegalArgumentException("Expected non-negative number, got " + number);
+        } else {
+            return Math.sqrt(number);
+        }
     }
 }
