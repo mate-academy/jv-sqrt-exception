@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-//import java.lang.IllegalArgumentException;
-
 /**
  * <p>Реализуйте метод sqrt(), вычисляющий квадратный корень числа. В отличие от Math.sqrt(),
  * это метод при передаче отрицательного параметра должен бросать исключение
