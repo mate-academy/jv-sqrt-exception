@@ -12,6 +12,6 @@ public class SqrtOperation {
         if (number > -1) {
             return Math.sqrt(number);
         }
-            throw new IllegalArgumentException("Expected non-negative number, got " + number);
+        throw new IllegalArgumentException("Expected non-negative number, got " + number);
     }
 }
