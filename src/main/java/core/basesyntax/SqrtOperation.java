@@ -8,6 +8,12 @@ package core.basesyntax;
  */
 public class SqrtOperation {
     public double sqrt(double number) {
-        return 0.0;
+
+        if (number < 0) {
+            String s = ("Expected non-negative number, got " + number);
+            throw new IllegalArgumentException(s);
+        }
+        return Math.sqrt(number);
+
     }
 }
