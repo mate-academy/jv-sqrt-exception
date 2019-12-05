@@ -8,6 +8,7 @@ package core.basesyntax;
  */
 public class SqrtOperation {
     public double sqrt(double number) {
-        return 0.0;
+        int a = 5;
+        return a;
     }
 }
