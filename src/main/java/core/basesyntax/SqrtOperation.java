@@ -6,12 +6,11 @@ package core.basesyntax;
  * java.lang.IllegalArgumentException с сообщением "Expected non-negative number, got ?",
  * где вместо вопросика будет подставлено фактически переданное в метод число.</p>
  */
-public class SqrtOperation {
+class SqrtOperation {
     public double sqrt(double number) {
         if (number < 0) {
-            throw  new IllegalArgumentException("Expected non-negative number, got \"+number");
+            throw  new IllegalArgumentException("Expected non-negative number, got " + number);
         }
-        number = Math.sqrt(number);
-        return number;
+        return Math.sqrt(number);
     }
 }
