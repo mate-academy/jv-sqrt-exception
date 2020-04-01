@@ -12,12 +12,6 @@ public class SqrtOperation {
             throw new java.lang.IllegalArgumentException(
                     "Expected non-negative number, got " + number);
         }
-        double temp = 0;
-        double squareRoot = number / 2;
-        while (temp - squareRoot != 0) {
-            temp = squareRoot;
-            squareRoot = (temp + number / temp) / 2;
-        }
-        return squareRoot;
+        return Math.sqrt(number);
     }
 }
