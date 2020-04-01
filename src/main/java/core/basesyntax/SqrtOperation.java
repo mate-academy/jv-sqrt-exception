@@ -8,12 +8,9 @@ package core.basesyntax;
  */
 public class SqrtOperation {
     public double sqrt(double number) {
-        double result = 0.0;
         if (number < 0) {
             throw new IllegalArgumentException("Expected non-negative number, got " + number);
-        } else {
-            result = Math.sqrt(number);
         }
-        return result;
+        return Math.sqrt(number);
     }
 }
