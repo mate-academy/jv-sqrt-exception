@@ -8,6 +8,16 @@ package core.basesyntax;
  */
 public class SqrtOperation {
     public double sqrt(double number) {
-        return 0.0;
+        if (number < 0) {
+            throw new java.lang.IllegalArgumentException(
+                    "Expected non-negative number, got " + number);
+        }
+        double temp = 0;
+        double squareRoot = number / 2;
+        while (temp - squareRoot != 0) {
+            temp = squareRoot;
+            squareRoot = (temp + number / temp) / 2;
+        }
+        return squareRoot;
     }
 }
