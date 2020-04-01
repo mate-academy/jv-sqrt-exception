@@ -8,6 +8,17 @@ package core.basesyntax;
  */
 public class SqrtOperation {
     public double sqrt(double number) {
-        return 0.0;
+        double result = number;
+        if (number < 0) {
+            throw new IllegalArgumentException();
+        }
+        while (number < result * result) {
+            if (result % 2 == 0) {
+                result = result / 2;
+            } else {
+                result = result + 1;
+            }
+        }
+        return result;
     }
 }
