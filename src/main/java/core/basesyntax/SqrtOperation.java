@@ -11,20 +11,6 @@ public class SqrtOperation {
         if (number < 0) {
             throw new IllegalArgumentException("Expected non-negative number, got " + number);
         }
-        double low = 0;
-        double high = number;
-        double mid = 0;
-        for (int i = 0; i < 100; i++) {
-            mid = (low + high) / 2;
-            if (mid * mid == number) {
-                return mid;
-            }
-            if (mid * mid < number) {
-                low = mid;
-            } else {
-                high = mid;
-            }
-        }
-        return mid;
+        return Math.sqrt(number);
     }
 }
