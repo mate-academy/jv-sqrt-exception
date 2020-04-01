@@ -8,13 +8,9 @@ package core.basesyntax;
  */
 public class SqrtOperation {
     public double sqrt(double number) {
-        belowZero((int) number);
-        return Math.sqrt(number);
-    }
-
-    private void belowZero(int number) {
         if (number < 0) {
-            throw new IllegalArgumentException(Integer.toString(number));
+            throw new IllegalArgumentException("Your input is below zero: " + (int) number);
         }
+        return Math.sqrt(number);
     }
 }
