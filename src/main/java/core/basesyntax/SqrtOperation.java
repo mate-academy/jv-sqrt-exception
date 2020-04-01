@@ -7,10 +7,6 @@ package core.basesyntax;
  * где вместо вопросика будет подставлено фактически переданное в метод число.</p>
  */
 public class SqrtOperation {
-    public static void main(String[] args) {
-        System.out.println(sqrt(-2));
-    }
-
     public static double sqrt(double number) {
         if (number < 0) {
             throw new IllegalArgumentException(String
