@@ -7,7 +7,7 @@ package core.basesyntax;
  * где вместо вопросика будет подставлено фактически переданное в метод число.</p>
  */
 public class SqrtOperation {
-    public static double sqrt(double number) {
+    public double sqrt(double number) {
         if (number < 0) {
             throw new IllegalArgumentException(String
                     .format("Expected non-negative number, got %.2f", number));
