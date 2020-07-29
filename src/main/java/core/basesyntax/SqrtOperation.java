@@ -9,14 +9,9 @@ package core.basesyntax;
 public class SqrtOperation {
 
     public double sqrt(double number) {
-        try {
             if (number < 0) {
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("Expected non-negative number, got " + number);
             }
-        } catch (IllegalArgumentException exception) {
-            System.out.println("Expected non-negative number, got " + number);
-            throw new IllegalArgumentException();
-        }
         return Math.sqrt(number);
     }
 }
