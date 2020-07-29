@@ -7,11 +7,10 @@ package core.basesyntax;
  * где вместо вопросика будет подставлено фактически переданное в метод число.</p>
  */
 public class SqrtOperation {
-    public double sqrt(double n) {
-
-        if (n < 0) {
-            throw new java.lang.IllegalArgumentException("Expected non-negative number, got " + n);
+    public double sqrt(double number) {
+        if (number < 0) {
+            throw new IllegalArgumentException("Expected non-negative number, got " + number);
         }
-        return Math.sqrt(n);
+        return Math.sqrt(number);
     }
 }
