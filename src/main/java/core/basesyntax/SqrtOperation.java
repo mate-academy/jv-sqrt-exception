@@ -14,5 +14,3 @@ public class SqrtOperation {
         return Math.sqrt(number);
     }
 }
-
-
