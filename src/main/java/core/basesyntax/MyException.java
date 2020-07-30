@@ -1,7 +1,7 @@
 package core.basesyntax;
 
-public class MyException extends java.lang.IllegalArgumentException {
-    public MyException(String message) {
+ class IllegalArgumentException extends RuntimeException {
+    public IllegalArgumentException(String message) {
         super(message);
     }
 }
